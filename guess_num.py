@@ -4,8 +4,12 @@
 # 猜錯告訴他比答案大/小
 
 import random
+start = input("請決定隨機數字範圍開始數值")
+end = input("請決定隨機數字範圍開結束數值")
+start = int(start)
+end = int(end)
 
-ran_1 = random.randint(1, 100)
+ran_1 = random.randint(start, end)
 count = 0
 
 while True:
